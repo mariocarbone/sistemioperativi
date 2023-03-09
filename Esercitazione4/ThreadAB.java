@@ -1,3 +1,5 @@
+package Esercitazione4;
+
 public class ThreadAB extends Thread{
 
     private String msg;

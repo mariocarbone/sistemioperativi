@@ -1,17 +1,25 @@
+package Esercitazione4;
+
 import java.util.concurrent.Semaphore;
 
-class Semafori41{
 
-private Semaphore mutex = new Semaphore(1);
+public class Semafori41Sinc{
+
+private Semaphore sync = new Semaphore(0);
+
+/*
+ * Due Thread A e B devono poter stampare
+ * mediante un semaforo che assicura la sincronizzazione
+ */
 
 
-public Semafori41(){
+public Semafori41Sinc(){
 }
 
 
 public static void main(String [] args){
 
-    System.out.println("Semafori Esercizio 1");
+    System.out.println("Semafori Esercizio 2");
     ThreadAB threadA = new ThreadAB("A");
     ThreadAB threadB = new ThreadAB("B");
     threadA.start();
@@ -21,10 +29,10 @@ public static void main(String [] args){
 
 public void stampa(String msg){
     try{
-    mutex.acquire();
+    sync.acquire();
     System.out.print("Il thread "+Thread.currentThread().getId() + " stampa: ");
     System.out.println(msg);
-    mutex.release();
+    sync.release();
     }catch(InterruptedException e){
         System.out.println(e);
     }
