@@ -1,4 +1,4 @@
-package Esercitazione5;
+package Esercitazione5.ProduttoreConsumatore;
 
 import java.util.concurrent.Semaphore;
 

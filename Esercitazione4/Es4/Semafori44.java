@@ -1,6 +1,4 @@
-package Esercitazione4.Quattro;
-
-import Esercitazione4.Uno.Semafori41Sinc;
+package Esercitazione4.Es4;
 
 import java.util.concurrent.Semaphore;
 

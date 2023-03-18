@@ -1,6 +1,4 @@
-package Esercitazione4.Uno;
-
-import Esercitazione4.Uno.Semafori41;
+package Esercitazione4.Es1;
 
 public class ThreadAB extends Thread {
 

@@ -1,8 +1,7 @@
-package Esercitazione5;
+package Esercitazione5.ProduttoreConsumatore;
 
 import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 
 public abstract class Buffer {
     protected int[] buffer;

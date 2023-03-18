@@ -1,4 +1,4 @@
-package Esercitazione4.Tre;
+package Esercitazione4.Es3;
 /*
 
 Si realizzi un’applicazione multithreaded che, data una matrice rettangolare NxM di interi inizializzati a zero, inizializzi ed avvii:

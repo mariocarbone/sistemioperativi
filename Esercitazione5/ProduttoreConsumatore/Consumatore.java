@@ -1,4 +1,6 @@
-package Esercitazione5;
+package Esercitazione5.ProduttoreConsumatore;
+
+import Esercitazione5.ProduttoreConsumatore.Buffer;
 
 import java.util.concurrent.TimeUnit;
 

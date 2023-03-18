@@ -1,4 +1,6 @@
-package Esercitazione5;
+package Esercitazione5.ProduttoreConsumatore;
+
+import Esercitazione5.ProduttoreConsumatore.Buffer;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -26,7 +28,7 @@ public class Produttore implements Runnable {
     }
 
     private void attendi(int minTempo, int maxTempo) throws InterruptedException {
-        int tempo =  (int) ((Math.random() * (maxTempo - minTempo)) + minTempo);
+        int tempo =  random.nextInt(maxTempo - minTempo + 1) + minTempo;
         TimeUnit.SECONDS.sleep(tempo);
     }
 
